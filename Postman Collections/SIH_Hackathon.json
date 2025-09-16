@@ -225,7 +225,40 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer token",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "API-Version",
+						"value": "v2",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "base_url?q=cancer",
+					"host": [
+						"base_url"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "cancer"
+						}
+					]
+				}
 			},
 			"response": []
 		}
