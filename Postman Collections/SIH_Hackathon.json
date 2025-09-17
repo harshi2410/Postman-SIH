@@ -228,7 +228,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer token",
+						"value": "Bearer {{token}}",
 						"type": "text"
 					},
 					{
@@ -248,9 +248,9 @@
 					}
 				],
 				"url": {
-					"raw": "base_url?q=cancer",
+					"raw": "{{url}}?q=cancer",
 					"host": [
-						"base_url"
+						"{{url}}"
 					],
 					"query": [
 						{
