@@ -365,49 +365,50 @@
 			]
 		},
 		{
-			"name": "New Request",
-			"id": "3238f66e-b3eb-480f-8276-396cec7a1964",
+			"name": "malaria",
+			"id": "04dc361e-4d7a-405b-8b90-cfc3e8590d86",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer {{token}}",
-						"type": "text"
-					},
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					},
-					{
-						"key": "API-Version",
-						"value": "v2",
-						"type": "text"
-					},
-					{
-						"key": "Accept-Language",
-						"value": "en",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{url}}?q=cancer",
-					"host": [
-						"{{url}}"
-					],
-					"query": [
-						{
-							"key": "q",
-							"value": "cancer"
-						}
-					]
-				}
+				"header": []
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9ddc72d0-9b87-4bbb-84de-0dfaf86dbff0",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1afe9989-6a06-40fb-aaaa-7d32b8c65c97",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url ",
+			"value": "https://id.who.int/icd/entity/search"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3NTgwMzI2NDQsImV4cCI6MTc1ODAzNjI0NCwiaXNzIjoiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQiLCJhdWQiOlsiaHR0cHM6Ly9pY2RhY2Nlc3NtYW5hZ2VtZW50Lndoby5pbnQvcmVzb3VyY2VzIiwiaWNkYXBpIl0sImNsaWVudF9pZCI6ImM2ZmIxMGQxLWE1NDEtNDUxYi1iMTg1LWI3MzY2ZjFmMmU4ZF8xY2I0ZjdiYS00YjA2LTRkOWUtOTg5Zi01YWRiY2QwNmVmNjkiLCJzY29wZSI6WyJpY2RhcGlfYWNjZXNzIl19.gPkgV7hCg8VrkxONdFBQPsw3T-OVxlFsaTXmiyAHo8mQ61on0LzcIN7ywxVqCLp3JYAatsvrmaXSdc986EcGzoLwvvgmTRFytmsY0NhTYJ0J3s6Q1r1o07ilouEqigAXw2yA6kUJB0fZagQhVIC_kRt5pGTGl5EaKDlwQ_a5kwyS9bPOr4Finbm1v5nKKnJkFeihzffRGsGUdcLu6Vouobw6mje1BYKKJBIxnx9U_ufgeY3HxYixl8dezXHQdraOOcXwVLKLdalen8yjMIS9OVsEIiKQLf_ExdRll8VeOWjd3cfzmnAfcW1zljvTm50yFtgUm8tu5MhQS7DBYQ"
 		}
 	]
 }
