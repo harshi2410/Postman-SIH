@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "main",
 			"id": "4ea96c3f-df49-4771-98a4-969bd41893d9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -55,7 +55,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "diabetes",
 			"id": "5aa8a151-c313-40f9-a928-f3c5d6626db2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
