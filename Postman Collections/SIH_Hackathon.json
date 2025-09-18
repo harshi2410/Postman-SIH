@@ -8,6 +8,21 @@
 	"item": [
 		{
 			"name": "main",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ca490684-0c52-4a36-b3e5-5932a28f5243",
+						"exec": [
+							"let jsonData = pm.response.json();\r",
+							"pm.environment.set(\"token\", jsonData.access_token);\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "4ea96c3f-df49-4771-98a4-969bd41893d9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
